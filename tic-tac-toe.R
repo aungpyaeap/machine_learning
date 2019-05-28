@@ -42,3 +42,7 @@ accuracy <- sum(diag(confusion_m)) / sum(confusion_m)
 print(accuracy)
 
 plot(output.tree)
+
+library(caret)
+results <- confusionMatrix(data=predict_values, reference=test_set$class)
+print(results)
