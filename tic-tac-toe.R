@@ -16,7 +16,7 @@ names(dataset)[10] <- "class"
 
 counts <- table(dataset$class)
 barplot(counts, main="Distribution of target variable",
-        xlab="Satisfication",ylab = "Frequency",
+        xlab="Class",ylab = "Frequency",
         border="orange",col="skyblue",density=100)
 
 write.csv(dataset, file = "tic-tac-toe-endgame.csv", row.names = FALSE)
